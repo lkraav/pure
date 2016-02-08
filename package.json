@@ -1,9 +1,8 @@
 {
-  "name": "purecss",
-  "version": "2.0.3",
+  "name": "purecss-conversionready",
+  "version": "2.0.3+conversionready",
   "repository": {
-    "type": "git",
-    "url": "git://github.com/pure-css/pure.git"
+    "url": "git://github.com/lkraav/pure.git"
   },
   "scripts": {
     "prepare": "grunt release && cat ./build/pure-min.css",
@@ -31,7 +30,7 @@
   },
   "description": "Pure is a ridiculously tiny CSS library you can use to start any web project.",
   "bugs": {
-    "url": "https://github.com/pure-css/pure/issues"
+    "url": "https://github.com/lkraav/pure/issues"
   },
   "homepage": "https://purecss.io",
   "main": "index.js",
@@ -47,7 +46,8 @@
     "ericf <edf@ericf.me>",
     "tilomitra <tilomitra@gmail.com>",
     "msweeney <matt.sweeney@yahoo.com>",
-    "jamesalley <manalagi001@yahoo.com>"
+    "jamesalley <manalagi001@yahoo.com>",
+    "lkraav <leho@conversionready.com>"
   ],
   "license": "BSD",
   "browserslist": [
