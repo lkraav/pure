@@ -23,6 +23,7 @@
     padding: 0.5em 1em; /* cell padding */
 }
 
+.pure-table tfoot,
 .pure-table thead {
     background-color: #e0e0e0;
     color: #000;
