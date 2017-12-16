@@ -1,6 +1,7 @@
 {
   "name": "purecss-conversionready",
-  "version": "2.0.3+conversionready",
+  "name": "purecss",
+  "version": "2.0.20200520-pre.unprefixed",
   "repository": {
     "url": "git://github.com/lkraav/pure.git"
   },
