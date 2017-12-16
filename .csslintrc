@@ -4,6 +4,7 @@
     "display-property-grouping": false,
     "fallback-colors"          : false,
     "order-alphabetical"       : false,
+    "overqualified-elements"   : false,
     "star-property-hack"       : false,
     "unqualified-attributes"   : false
 }
