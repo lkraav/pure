@@ -4,4 +4,4 @@ Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
-.pure-menu-scrollable{overflow-y:scroll;overflow-x:hidden}.pure-menu-scrollable .pure-menu-list{display:block}.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list{display:inline-block}.pure-menu-horizontal.pure-menu-scrollable{white-space:nowrap;overflow-y:hidden;overflow-x:auto;padding:.5em 0}
+.menu-scrollable{overflow-y:scroll;overflow-x:hidden}.menu-scrollable .menu-list{display:block}.menu-horizontal.menu-scrollable .menu-list{display:inline-block}.menu-horizontal.menu-scrollable{white-space:nowrap;overflow-y:hidden;overflow-x:auto;padding:.5em 0}

@@ -4,4 +4,4 @@ Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE.md
 */
-.pure-menu-item .pure-menu-item{display:block}.pure-menu-children{display:none;position:absolute;left:100%;top:0;margin:0;padding:0;z-index:3}.pure-menu-horizontal .pure-menu-children{left:0;top:auto;width:inherit}.pure-menu-active>.pure-menu-children,.pure-menu-allow-hover:hover>.pure-menu-children{display:block;position:absolute}.pure-menu-has-children>.pure-menu-link:after{padding-left:.5em;content:"\25B8";font-size:small}.pure-menu-horizontal .pure-menu-has-children>.pure-menu-link:after{content:"\25BE"}
+.menu-item .menu-item{display:block}.menu-children{display:none;position:absolute;left:100%;top:0;margin:0;padding:0;z-index:3}.menu-horizontal .menu-children{left:0;top:auto;width:inherit}.menu-active>.menu-children,.menu-allow-hover:hover>.menu-children{display:block;position:absolute}.menu-has-children>.menu-link:after{padding-left:.5em;content:"\25B8";font-size:small}.menu-horizontal .menu-has-children>.menu-link:after{content:"\25BE"}

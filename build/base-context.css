@@ -416,11 +416,11 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 }
 
 /**
- * Add this class to an image to make it fit within it's fluid parent wrapper while maintaining
+ * Make an image fit within it's fluid parent wrapper while maintaining
  * aspect ratio.
  */
 
-.pure .pure-img {
+.pure img {
     max-width: 100%;
     height: auto;
     display: block;

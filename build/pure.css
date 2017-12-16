@@ -386,10 +386,10 @@ html {
 }
 
 /**
- * Add this class to an image to make it fit within it's fluid parent wrapper while maintaining
+ * Make an image fit within it's fluid parent wrapper while maintaining
  * aspect ratio.
  */
-.pure-img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -647,7 +647,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-24-24 {
     width: 100%;
 }
-.pure-button {
+.button {
     /* Structure */
     display: inline-block;
     line-height: normal;
@@ -665,7 +665,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* Firefox: Get rid of the inner focus border */
-.pure-button::-moz-focus-inner {
+.button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
@@ -690,7 +690,7 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /*csslint outline-none:false*/
 
-.pure-button {
+.button {
     font-family: inherit;
     font-size: 100%;
     padding: 0.5em 1em;
@@ -701,27 +701,27 @@ this the same font stack that Normalize.css sets for the `body`.
     border-radius: 2px;
 }
 
-.pure-button-hover,
-.pure-button:hover,
-.pure-button:focus {
+.button-hover,
+.button:hover,
+.button:focus {
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
-.pure-button:focus {
+.button:focus {
     outline: 0;
 }
-.pure-button-active,
-.pure-button:active {
+.button-active,
+.button:active {
     -webkit-box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
             box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
     border-color: #000;
 }
 
-.pure-button[disabled],
-.pure-button-disabled,
-.pure-button-disabled:hover,
-.pure-button-disabled:focus,
-.pure-button-disabled:active {
+.button[disabled],
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:focus,
+.button-disabled:active {
     border: none;
     background-image: none;
     opacity: 0.40;
@@ -731,14 +731,14 @@ this the same font stack that Normalize.css sets for the `body`.
     pointer-events: none;
 }
 
-.pure-button-hidden {
+.button-hidden {
     display: none;
 }
 
-.pure-button-primary,
-.pure-button-selected,
-a.pure-button-primary,
-a.pure-button-selected {
+.button-primary,
+.button-selected,
+a.button-primary,
+a.button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
 }
@@ -769,22 +769,22 @@ the padding. We explicitly set the box-model for select elements to border-box,
 so we can ignore the csslint warning.
 */
 
-.pure-form input[type="text"],
-.pure-form input[type="password"],
-.pure-form input[type="email"],
-.pure-form input[type="url"],
-.pure-form input[type="date"],
-.pure-form input[type="month"],
-.pure-form input[type="time"],
-.pure-form input[type="datetime"],
-.pure-form input[type="datetime-local"],
-.pure-form input[type="week"],
-.pure-form input[type="number"],
-.pure-form input[type="search"],
-.pure-form input[type="tel"],
-.pure-form input[type="color"],
-.pure-form select,
-.pure-form textarea {
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="url"],
+form input[type="date"],
+form input[type="month"],
+form input[type="time"],
+form input[type="datetime"],
+form input[type="datetime-local"],
+form input[type="week"],
+form input[type="number"],
+form input[type="search"],
+form input[type="tel"],
+form input[type="color"],
+form select,
+form textarea {
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ccc;
@@ -800,7 +800,7 @@ so we can ignore the csslint warning.
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
-.pure-form input:not([type]) {
+form input:not([type]) {
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ccc;
@@ -814,27 +814,27 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 /* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
 /* May be able to remove this tweak as color inputs become more standardized across browsers. */
-.pure-form input[type="color"] {
+form input[type="color"] {
     padding: 0.2em 0.5em;
 }
 
 
-.pure-form input[type="text"]:focus,
-.pure-form input[type="password"]:focus,
-.pure-form input[type="email"]:focus,
-.pure-form input[type="url"]:focus,
-.pure-form input[type="date"]:focus,
-.pure-form input[type="month"]:focus,
-.pure-form input[type="time"]:focus,
-.pure-form input[type="datetime"]:focus,
-.pure-form input[type="datetime-local"]:focus,
-.pure-form input[type="week"]:focus,
-.pure-form input[type="number"]:focus,
-.pure-form input[type="search"]:focus,
-.pure-form input[type="tel"]:focus,
-.pure-form input[type="color"]:focus,
-.pure-form select:focus,
-.pure-form textarea:focus {
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
+form input[type="url"]:focus,
+form input[type="date"]:focus,
+form input[type="month"]:focus,
+form input[type="time"]:focus,
+form input[type="datetime"]:focus,
+form input[type="datetime-local"]:focus,
+form input[type="week"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="tel"]:focus,
+form input[type="color"]:focus,
+form select:focus,
+form textarea:focus {
     outline: 0;
     border-color: #129FEA;
 }
@@ -843,39 +843,39 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
-.pure-form input:not([type]):focus {
+form input:not([type]):focus {
     outline: 0;
     border-color: #129FEA;
 }
 
-.pure-form input[type="file"]:focus,
-.pure-form input[type="radio"]:focus,
-.pure-form input[type="checkbox"]:focus {
+form input[type="file"]:focus,
+form input[type="radio"]:focus,
+form input[type="checkbox"]:focus {
     outline: thin solid #129FEA;
     outline: 1px auto #129FEA;
 }
-.pure-form .pure-checkbox,
-.pure-form .pure-radio {
+form label.checkbox,
+form label.radio {
     margin: 0.5em 0;
     display: block;
 }
 
-.pure-form input[type="text"][disabled],
-.pure-form input[type="password"][disabled],
-.pure-form input[type="email"][disabled],
-.pure-form input[type="url"][disabled],
-.pure-form input[type="date"][disabled],
-.pure-form input[type="month"][disabled],
-.pure-form input[type="time"][disabled],
-.pure-form input[type="datetime"][disabled],
-.pure-form input[type="datetime-local"][disabled],
-.pure-form input[type="week"][disabled],
-.pure-form input[type="number"][disabled],
-.pure-form input[type="search"][disabled],
-.pure-form input[type="tel"][disabled],
-.pure-form input[type="color"][disabled],
-.pure-form select[disabled],
-.pure-form textarea[disabled] {
+form input[type="text"][disabled],
+form input[type="password"][disabled],
+form input[type="email"][disabled],
+form input[type="url"][disabled],
+form input[type="date"][disabled],
+form input[type="month"][disabled],
+form input[type="time"][disabled],
+form input[type="datetime"][disabled],
+form input[type="datetime-local"][disabled],
+form input[type="week"][disabled],
+form input[type="number"][disabled],
+form input[type="search"][disabled],
+form input[type="tel"][disabled],
+form input[type="color"][disabled],
+form select[disabled],
+form textarea[disabled] {
     cursor: not-allowed;
     background-color: #eaeded;
     color: #cad2d3;
@@ -885,48 +885,48 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
-.pure-form input:not([type])[disabled] {
+form input:not([type])[disabled] {
     cursor: not-allowed;
     background-color: #eaeded;
     color: #cad2d3;
 }
-.pure-form input[readonly],
-.pure-form select[readonly],
-.pure-form textarea[readonly] {
+form input[readonly],
+form select[readonly],
+form textarea[readonly] {
     background-color: #eee; /* menu hover bg color */
     color: #777; /* menu text color */
     border-color: #ccc;
 }
 
-.pure-form input:focus:invalid,
-.pure-form textarea:focus:invalid,
-.pure-form select:focus:invalid {
+form input:focus:invalid,
+form textarea:focus:invalid,
+form select:focus:invalid {
     color: #b94a48;
     border-color: #e9322d;
 }
-.pure-form input[type="file"]:focus:invalid:focus,
-.pure-form input[type="radio"]:focus:invalid:focus,
-.pure-form input[type="checkbox"]:focus:invalid:focus {
+form input[type="file"]:focus:invalid:focus,
+form input[type="radio"]:focus:invalid:focus,
+form input[type="checkbox"]:focus:invalid:focus {
     outline-color: #e9322d;
 }
-.pure-form select {
+form select {
     /* Normalizes the height; padding is not sufficient. */
     height: 2.25em;
     border: 1px solid #ccc;
     background-color: white;
 }
-.pure-form select[multiple] {
+form select[multiple] {
     height: auto;
 }
-.pure-form label {
+form label {
     margin: 0.5em 0 0.2em;
 }
-.pure-form fieldset {
+form fieldset {
     margin: 0;
     padding: 0.35em 0 0.75em;
     border: 0;
 }
-.pure-form legend {
+form legend {
     display: block;
     width: 100%;
     padding: 0.3em 0;
@@ -935,24 +935,24 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     border-bottom: 1px solid #e5e5e5;
 }
 
-.pure-form-stacked input[type="text"],
-.pure-form-stacked input[type="password"],
-.pure-form-stacked input[type="email"],
-.pure-form-stacked input[type="url"],
-.pure-form-stacked input[type="date"],
-.pure-form-stacked input[type="month"],
-.pure-form-stacked input[type="time"],
-.pure-form-stacked input[type="datetime"],
-.pure-form-stacked input[type="datetime-local"],
-.pure-form-stacked input[type="week"],
-.pure-form-stacked input[type="number"],
-.pure-form-stacked input[type="search"],
-.pure-form-stacked input[type="tel"],
-.pure-form-stacked input[type="color"],
-.pure-form-stacked input[type="file"],
-.pure-form-stacked select,
-.pure-form-stacked label,
-.pure-form-stacked textarea {
+form.stacked input[type="text"],
+form.stacked input[type="password"],
+form.stacked input[type="email"],
+form.stacked input[type="url"],
+form.stacked input[type="date"],
+form.stacked input[type="month"],
+form.stacked input[type="time"],
+form.stacked input[type="datetime"],
+form.stacked input[type="datetime-local"],
+form.stacked input[type="week"],
+form.stacked input[type="number"],
+form.stacked input[type="search"],
+form.stacked input[type="tel"],
+form.stacked input[type="color"],
+form.stacked input[type="file"],
+form.stacked select,
+form.stacked label,
+form.stacked textarea {
     display: block;
     margin: 0.25em 0;
 }
@@ -961,49 +961,49 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
-.pure-form-stacked input:not([type]) {
+form.stacked input:not([type]) {
     display: block;
     margin: 0.25em 0;
 }
-.pure-form-aligned input,
-.pure-form-aligned textarea,
-.pure-form-aligned select,
-.pure-form-message-inline {
+form.aligned input,
+form.aligned textarea,
+form.aligned select,
+form.message-inline {
     display: inline-block;
     vertical-align: middle;
 }
-.pure-form-aligned textarea {
+form.aligned textarea {
     vertical-align: top;
 }
 
 /* Aligned Forms */
-.pure-form-aligned .pure-control-group {
+form.aligned .control-group {
     margin-bottom: 0.5em;
 }
-.pure-form-aligned .pure-control-group label {
+form.aligned .control-group label {
     text-align: right;
     display: inline-block;
     vertical-align: middle;
     width: 10em;
     margin: 0 1em 0 0;
 }
-.pure-form-aligned .pure-controls {
+form.aligned .controls {
     margin: 1.5em 0 0 11em;
 }
 
 /* Rounded Inputs */
-.pure-form input.pure-input-rounded,
-.pure-form .pure-input-rounded {
+form input.input-rounded,
+form .input-rounded {
     border-radius: 2em;
     padding: 0.5em 1em;
 }
 
 /* Grouped Inputs */
-.pure-form .pure-group fieldset {
+form .group fieldset {
     margin-bottom: 10px;
 }
-.pure-form .pure-group input,
-.pure-form .pure-group textarea {
+form .group input,
+form .group textarea {
     display: block;
     padding: 10px;
     margin: 0 0 -1px;
@@ -1011,53 +1011,53 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     position: relative;
     top: -1px;
 }
-.pure-form .pure-group input:focus,
-.pure-form .pure-group textarea:focus {
+form .group input:focus,
+form .group textarea:focus {
     z-index: 3;
 }
-.pure-form .pure-group input:first-child,
-.pure-form .pure-group textarea:first-child {
+form .group input:first-child,
+form .group textarea:first-child {
     top: 1px;
     border-radius: 4px 4px 0 0;
     margin: 0;
 }
-.pure-form .pure-group input:first-child:last-child,
-.pure-form .pure-group textarea:first-child:last-child {
+form .group input:first-child:last-child,
+form .group textarea:first-child:last-child {
     top: 1px;
     border-radius: 4px;
     margin: 0;
 }
-.pure-form .pure-group input:last-child,
-.pure-form .pure-group textarea:last-child {
+form .group input:last-child,
+form .group textarea:last-child {
     top: -2px;
     border-radius: 0 0 4px 4px;
     margin: 0;
 }
-.pure-form .pure-group button {
+form .group button {
     margin: 0.35em 0;
 }
 
-.pure-form .pure-input-1 {
+form .input-1 {
     width: 100%;
 }
-.pure-form .pure-input-3-4 {
+form .input-3-4 {
     width: 75%;
 }
-.pure-form .pure-input-2-3 {
+form .input-2-3 {
     width: 66%;
 }
-.pure-form .pure-input-1-2 {
+form .input-1-2 {
     width: 50%;
 }
-.pure-form .pure-input-1-3 {
+form .input-1-3 {
     width: 33%;
 }
-.pure-form .pure-input-1-4 {
+form .input-1-4 {
     width: 25%;
 }
 
 /* Inline help for forms */
-.pure-form-message-inline {
+form.message-inline {
     display: inline-block;
     padding-left: 0.3em;
     color: #666;
@@ -1066,68 +1066,68 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 
 /* Block help for forms */
-.pure-form-message {
+form.message {
     display: block;
     color: #666;
     font-size: 0.875em;
 }
 
 @media only screen and (max-width : 480px) {
-    .pure-form button[type="submit"] {
+    form button[type="submit"] {
         margin: 0.7em 0 0;
     }
 
-    .pure-form input:not([type]),
-    .pure-form input[type="text"],
-    .pure-form input[type="password"],
-    .pure-form input[type="email"],
-    .pure-form input[type="url"],
-    .pure-form input[type="date"],
-    .pure-form input[type="month"],
-    .pure-form input[type="time"],
-    .pure-form input[type="datetime"],
-    .pure-form input[type="datetime-local"],
-    .pure-form input[type="week"],
-    .pure-form input[type="number"],
-    .pure-form input[type="search"],
-    .pure-form input[type="tel"],
-    .pure-form input[type="color"],
-    .pure-form label {
+    form input:not([type]),
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="url"],
+    form input[type="date"],
+    form input[type="month"],
+    form input[type="time"],
+    form input[type="datetime"],
+    form input[type="datetime-local"],
+    form input[type="week"],
+    form input[type="number"],
+    form input[type="search"],
+    form input[type="tel"],
+    form input[type="color"],
+    form label {
         margin-bottom: 0.3em;
         display: block;
     }
 
-    .pure-group input:not([type]),
-    .pure-group input[type="text"],
-    .pure-group input[type="password"],
-    .pure-group input[type="email"],
-    .pure-group input[type="url"],
-    .pure-group input[type="date"],
-    .pure-group input[type="month"],
-    .pure-group input[type="time"],
-    .pure-group input[type="datetime"],
-    .pure-group input[type="datetime-local"],
-    .pure-group input[type="week"],
-    .pure-group input[type="number"],
-    .pure-group input[type="search"],
-    .pure-group input[type="tel"],
-    .pure-group input[type="color"] {
+    .group input:not([type]),
+    .group input[type="text"],
+    .group input[type="password"],
+    .group input[type="email"],
+    .group input[type="url"],
+    .group input[type="date"],
+    .group input[type="month"],
+    .group input[type="time"],
+    .group input[type="datetime"],
+    .group input[type="datetime-local"],
+    .group input[type="week"],
+    .group input[type="number"],
+    .group input[type="search"],
+    .group input[type="tel"],
+    .group input[type="color"] {
         margin-bottom: 0;
     }
 
-    .pure-form-aligned .pure-control-group label {
+    form.aligned .control-group label {
         margin-bottom: 0.3em;
         text-align: left;
         display: block;
         width: 100%;
     }
 
-    .pure-form-aligned .pure-controls {
+    form.aligned .controls {
         margin: 1.5em 0 0 0;
     }
 
-    .pure-form-message-inline,
-    .pure-form-message {
+    form.message-inline,
+    form.message {
         display: block;
         font-size: 0.75em;
         /* Increased bottom padding to make it group with its related input element. */
@@ -1136,66 +1136,66 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 
 /*csslint adjoining-classes: false, box-model:false*/
-.pure-menu {
+.menu {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
-.pure-menu-fixed {
+.menu-fixed {
     position: fixed;
     left: 0;
     top: 0;
     z-index: 3;
 }
 
-.pure-menu-list,
-.pure-menu-item {
+.menu-list,
+.menu-item {
     position: relative;
 }
 
-.pure-menu-list {
+.menu-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.pure-menu-item {
+.menu-item {
     padding: 0;
     margin: 0;
     height: 100%;
 }
 
-.pure-menu-link,
-.pure-menu-heading {
+.menu-link,
+.menu-heading {
     display: block;
     text-decoration: none;
     white-space: nowrap;
 }
 
 /* HORIZONTAL MENU */
-.pure-menu-horizontal {
+.menu-horizontal {
     width: 100%;
     white-space: nowrap;
 }
 
-.pure-menu-horizontal .pure-menu-list {
+.menu-horizontal .menu-list {
     display: inline-block;
 }
 
 /* Initial menus should be inline-block so that they are horizontal */
-.pure-menu-horizontal .pure-menu-item,
-.pure-menu-horizontal .pure-menu-heading,
-.pure-menu-horizontal .pure-menu-separator {
+.menu-horizontal .menu-item,
+.menu-horizontal .menu-heading,
+.menu-horizontal .menu-separator {
     display: inline-block;
     vertical-align: middle;
 }
 
 /* Submenus should still be display: block; */
-.pure-menu-item .pure-menu-item {
+.menu-item .menu-item {
     display: block;
 }
 
-.pure-menu-children {
+.menu-children {
     display: none;
     position: absolute;
     left: 100%;
@@ -1205,45 +1205,45 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     z-index: 3;
 }
 
-.pure-menu-horizontal .pure-menu-children {
+.menu-horizontal .menu-children {
     left: 0;
     top: auto;
     width: inherit;
 }
 
-.pure-menu-allow-hover:hover > .pure-menu-children,
-.pure-menu-active > .pure-menu-children {
+.menu-allow-hover:hover > .menu-children,
+.menu-active > .menu-children {
     display: block;
     position: absolute;
 }
 
 /* Vertical Menus - show the dropdown arrow */
-.pure-menu-has-children > .pure-menu-link:after {
+.menu-has-children > .menu-link:after {
     padding-left: 0.5em;
     content: "\25B8";
     font-size: small;
 }
 
 /* Horizontal Menus - show the dropdown arrow */
-.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
+.menu-horizontal .menu-has-children > .menu-link:after {
     content: "\25BE";
 }
 
 /* scrollable menus */
-.pure-menu-scrollable {
+.menu-scrollable {
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.pure-menu-scrollable .pure-menu-list {
+.menu-scrollable .menu-list {
     display: block;
 }
 
-.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list {
+.menu-horizontal.menu-scrollable .menu-list {
     display: inline-block;
 }
 
-.pure-menu-horizontal.pure-menu-scrollable {
+.menu-horizontal.menu-scrollable {
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
@@ -1253,64 +1253,58 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 /* misc default styling */
 
-.pure-menu-separator,
-.pure-menu-horizontal .pure-menu-children .pure-menu-separator {
+.menu-separator,
+.menu-horizontal .menu-children .menu-separator {
     background-color: #ccc;
     height: 1px;
     margin: .3em 0;
 }
 
-.pure-menu-horizontal .pure-menu-separator {
+.menu-horizontal .menu-separator {
     width: 1px;
     height: 1.3em;
     margin: 0 .3em ;
 }
 
-/* Need to reset the separator since submenu is vertical */
-.pure-menu-horizontal .pure-menu-children .pure-menu-separator {
-    display: block;
-    width: auto;
-}
-
-.pure-menu-heading {
+.menu-heading {
     text-transform: uppercase;
     color: #565d64;
 }
 
-.pure-menu-link {
+.menu-link {
     color: #777;
 }
 
-.pure-menu-children {
+.menu-children {
     background-color: #fff;
 }
 
-.pure-menu-link,
-.pure-menu-disabled,
-.pure-menu-heading {
+.menu-link,
+.menu-disabled,
+.menu-heading {
     padding: .5em 1em;
 }
 
-.pure-menu-disabled {
+.menu-disabled {
     opacity: .5;
 }
 
-.pure-menu-disabled .pure-menu-link:hover {
+.menu-disabled .menu-link:hover {
     background-color: transparent;
 }
 
-.pure-menu-active > .pure-menu-link,
-.pure-menu-link:hover,
-.pure-menu-link:focus {
+.menu-active > .menu-link,
+.menu-link:hover,
+.menu-link:focus {
     background-color: #eee;
 }
 
-.pure-menu-selected > .pure-menu-link,
-.pure-menu-selected > .pure-menu-link:visited {
+.menu-selected > .menu-link,
+.menu-selected > .menu-link:visited {
     color: #000;
 }
 
-.pure-table {
+table {
     /* Remove spacing between table cells (from Normalize.css) */
     border-collapse: collapse;
     border-spacing: 0;
@@ -1318,15 +1312,15 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     border: 1px solid #cbcbcb;
 }
 
-.pure-table caption {
+table caption {
     color: #000;
     font: italic 85%/1 arial, sans-serif;
     padding: 1em 0;
     text-align: center;
 }
 
-.pure-table td,
-.pure-table th {
+table td,
+table th {
     border-left: 1px solid #cbcbcb;/*  inner column border */
     border-width: 0 0 0 1px;
     font-size: inherit;
@@ -1335,8 +1329,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     padding: 0.5em 1em; /* cell padding */
 }
 
-.pure-table tfoot,
-.pure-table thead {
+table tfoot,
+table thead {
     background-color: #e0e0e0;
     color: #000;
     text-align: left;
@@ -1348,34 +1342,34 @@ striping:
    even - #fff (white)
    odd  - #f2f2f2 (light gray)
 */
-.pure-table td {
+table td {
     background-color: transparent;
 }
-.pure-table-odd td {
+table-odd td {
     background-color: #f2f2f2;
 }
 
 /* nth-child selector for modern browsers */
-.pure-table-striped tr:nth-child(2n-1) td {
+table.striped tr:nth-child(2n-1) td {
     background-color: #f2f2f2;
 }
 
 /* BORDERED TABLES */
-.pure-table-bordered td {
+table.bordered td {
     border-bottom: 1px solid #cbcbcb;
 }
-.pure-table-bordered tbody > tr:last-child > td {
+table.bordered tbody > tr:last-child > td {
     border-bottom-width: 0;
 }
 
 
 /* HORIZONTAL BORDERED TABLES */
 
-.pure-table-horizontal td,
-.pure-table-horizontal th {
+table.horizontal td,
+table.horizontal th {
     border-width: 0 0 1px 0;
     border-bottom: 1px solid #cbcbcb;
 }
-.pure-table-horizontal tbody > tr:last-child > td {
+table.horizontal tbody > tr:last-child > td {
     border-bottom-width: 0;
 }
