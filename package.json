@@ -1,7 +1,6 @@
 {
-  "name": "purecss-conversionready",
   "name": "purecss",
-  "version": "2.0.20200520-pre.unprefixed",
+  "version": "2.0.20200520-pre.unprefixed-cxl-ui",
   "repository": {
     "url": "git://github.com/lkraav/pure.git"
   },
