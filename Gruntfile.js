@@ -37,7 +37,6 @@ grunt.initConfig({
         build: {
             files: [
                 {'build/base.css': [
-                    'node_modules/normalize.css/normalize.css',
                     'build/base.css'
                 ]},
 
